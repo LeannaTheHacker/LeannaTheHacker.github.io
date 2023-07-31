@@ -1,0 +1,49 @@
+/* 
+    Layout Properties (position, float, clear, display)
+    Box Model Properties (width, height, margin, padding)
+    Visual Properties (color, background, border, box-shadow)
+    Typography Properties (font-size, font-family, text-align, text-transform)
+    Misc Properties (cursor, overflow, z-index)
+*/
+
+#background-image {
+    position: absolute;
+    right: calc(0px - 10%);
+
+    height: 110vh;
+
+    z-index: -1;
+}
+
+.main-container {
+    width: clamp(400px, 80%, 900px);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    justify-self: center;
+
+    color: black;
+
+    font-size: clamp(90px, 10vh, 120px);
+}
+
+.content-box {
+    justify-self: center;
+    
+    width: clamp(300px, 60%, 700px);
+    height: fit-content;
+    margin-top: 200px;
+    padding: 10px;
+
+    background: #FDF66E;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(50px, 5vh, 70px);
+}
